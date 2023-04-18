@@ -1,0 +1,29 @@
+a:link{
+    text-decoration: none;
+    color: greenyellow;
+}
+a:visited{
+    text-decoration: none;
+}
+a:hover{
+    font-size: 30px;
+    text-decoration:underline;
+    color: rgb(224, 173, 252);
+
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color:darkorchid;
+    font-size: 24px;
+    margin: 20px;
+    align-items:center;
+    column-gap: 30px;
+    height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.mapa{
+    align-content: center;
+}
