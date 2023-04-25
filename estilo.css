@@ -1,3 +1,30 @@
+body{
+
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    
+}
+
+.menu{
+    flex-wrap: wrap;
+    justify-content: right;
+    background-color:rgb(79, 77, 77);
+    margin: 20px;
+    align-items:center;
+    column-gap: 30px;
+    height: 70px;
+}
+
+.menu a{
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+}
 a:link{
     text-decoration: none;
     color: greenyellow;
@@ -6,24 +33,20 @@ a:visited{
     text-decoration: none;
 }
 a:hover{
-    font-size: 30px;
+    transition: 1s;
+    font-size: 1.4em;
     text-decoration:underline;
-    color: rgb(224, 173, 252);
+    color: rgb(206, 0, 0);
 
 }
-.contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color:darkorchid;
-    font-size: 24px;
-    margin: 20px;
-    align-items:center;
-    column-gap: 30px;
-    height: 70px;
-    font-family: Arial, Helvetica, sans-serif;
-    
+
+.home div{
+    text-align: center;
+    border: 1px solid;
+    grid-column-start: 1;
+    grid-column-end: 6;
 }
+
 .mapa{
     align-content: center;
 }
