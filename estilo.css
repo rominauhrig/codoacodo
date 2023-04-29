@@ -1,6 +1,7 @@
 body{
 
     font-family: 'Montserrat', sans-serif;
+    background-color: rgb(202, 201, 201);
 
 }
 
@@ -10,21 +11,41 @@ body{
     
 }
 
+
+.imagen-logo img{
+    margin-right: 70px;
+    width: 80px;
+}
+
 .menu{
-    flex-wrap: wrap;
+    
+    flex-wrap:wrap;
     justify-content: right;
-    background-color:rgb(79, 77, 77);
+    background: linear-gradient(rgb(202, 201, 201), rgb(68,251,93));
+    background-color:rgb(68, 251, 93);
     margin: 20px;
     align-items:center;
     column-gap: 30px;
     height: 70px;
+    border-radius: 5px;
+    padding-right: 30px;
 }
+
 
 .menu a{
     color: white;
     font-size: 1.1em;
     font-weight: bold;
+    padding: 5px;
 }
+
+.pagina-actual{
+
+    border-radius: 5px;
+    background-color: rgb(15, 227, 43);
+
+}
+
 a:link{
     text-decoration: none;
     color: greenyellow;
@@ -33,20 +54,39 @@ a:visited{
     text-decoration: none;
 }
 a:hover{
-    transition: 1s;
-    font-size: 1.4em;
-    text-decoration:underline;
-    color: rgb(206, 0, 0);
+    transition: 500ms;
+    border-radius: 5px;
+    background-color: rgb(27, 201, 50);
 
 }
 
 .home div{
     text-align: center;
-    border: 1px solid;
     grid-column-start: 1;
     grid-column-end: 6;
 }
 
+.imagen-reparando{
+    padding: 40px 0px;
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.imagen-reparando img{
+    width: 50%;
+    box-shadow: 10px 10px 30px 15px #000000;
+}
+
+
 .mapa{
     align-content: center;
+}
+
+.copyright {
+
+    color: black;
+    font-size: 13px;
+    margin: 20px;
+
 }
