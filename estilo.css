@@ -89,3 +89,46 @@ a:hover{
     margin: 20px;
 
 }
+
+form{
+
+    margin: 40px 0;
+
+}
+form label{
+
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+
+}
+.input-padron{
+
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+
+}
+
+.enviar{
+    margin-left: 20px;
+    width: 30%;
+    padding: 15px 0px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background:rgb(15, 227, 43);
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+
+}
+
+.enviar:hover{
+
+    background: rgb(11, 118, 25);
+    transform: scale(1.1);
+    
+}
