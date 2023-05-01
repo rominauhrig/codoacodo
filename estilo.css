@@ -7,25 +7,31 @@ body{
 
 .contenedor{
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template: auto auto auto auto auto / 20% auto 20%;
+    grid-template-areas:
+                         " header header header header header"
+                         "cuerpo cuerpo cuerpo cuerpo cuerpo"
+                         "pie pie pie pie pie";
     
 }
 
 
-.imagen-logo img{
-    margin-right: 70px;
+.imagen-logo{
+    position: absolute;
+    margin-left: 90px;
     width: 80px;
+    
 }
 
 .menu{
     
-    flex-wrap:wrap;
+    grid-area: header;
+    display: flex;
     justify-content: right;
     background: linear-gradient(rgb(202, 201, 201), rgb(68,251,93));
     background-color:rgb(68, 251, 93);
-    margin: 20px;
+    margin: 0px;
     align-items:center;
-    column-gap: 30px;
     height: 70px;
     border-radius: 5px;
     padding-right: 30px;
@@ -42,7 +48,7 @@ body{
 .pagina-actual{
 
     border-radius: 5px;
-    background-color: rgb(15, 227, 43);
+    background-color: rgb(27, 201, 50);
 
 }
 
@@ -59,27 +65,31 @@ a:hover{
 
 }
 
-.home div{
+.home {
+    padding: 60px;
+    grid-area: cuerpo;
     text-align: center;
-    grid-column-start: 1;
-    grid-column-end: 6;
+
 }
+.home h1, h2, h3{
+    margin-top: 30px;
+}
+
 
 .imagen-reparando{
-    padding: 40px 0px;
-    align-content: center;
-    justify-content: center;
-    text-align: center;
-}
-
-.imagen-reparando img{
-    width: 50%;
+    margin-top: 50px;
+    width:50%;
     box-shadow: 10px 10px 30px 15px #000000;
 }
 
 
-.mapa{
-    align-content: center;
+
+
+.pie-pagina{
+    grid-area: pie;
+    text-align: center;
+    background: linear-gradient(rgb(202,201,201),rgb(90, 89, 89));
+    
 }
 
 .copyright {
@@ -90,6 +100,9 @@ a:hover{
 
 }
 
+.cuerpo-formulario{
+    grid-area: cuerpo;
+}
 form{
 
     margin: 40px 0;
@@ -108,6 +121,7 @@ form label{
     margin: 0 0 20px;
     padding: 10px 25px;
     width: 50%;
+    border-radius: 3px;
 
 }
 
@@ -131,4 +145,10 @@ form label{
     background: rgb(11, 118, 25);
     transform: scale(1.1);
     
+}
+
+.mapa{
+    margin: 0 0 60px 20px;
+    width: 50%;
+    box-shadow: 10px 10px 30px 15px black;
 }

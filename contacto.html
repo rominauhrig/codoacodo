@@ -11,18 +11,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <div class="contenedor">
+        <img class="imagen-logo" src="imagenes/logo.png" alt="Logo">
 
-        <nav class="contenedor menu">
-            <div class="imagen-logo"><img src="imagenes/logo.png" alt=""></div>
-            <div><a href="index.html">HOME</a></div>
-            <div><a href="nosotros.html">NOSOTROS</a></div>
-            <div><a href="productos.html">PRODUCTOS</a></div>
-            <div><a class="pagina-actual" href="contacto.html">CONTACTO</a></div>
+        <nav class="menu">
+            <header>
+
+                <a href="index.html">HOME</a>
+                <a href="nosotros.html">NOSOTROS</a>
+                <a href="productos.html">PRODUCTOS</a>
+                <a class="pagina-actual" href="contacto.html">CONTACTO</a>
+            </header>
         </nav>
-
-    </header>
-
+<div class="cuerpo-formulario">
     <main>
     <h1>Contacta con nosotros</h1>
     <form action="link">
@@ -41,14 +42,14 @@
     
         <input type="submit" value="Enviar Formulario" class="enviar">
 </form>
+<iframe class="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.324024495164!2d-60.65207079999999!3d-32.94245360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab40a1439e7d%3A0xf8e2c132e168d874!2sSta%20Fe%202132%2C%20S2152ERO%20Rosario%2C%20Santa%20Fe%2C%20Argentina!5e0!3m2!1ses!2ses!4v1680681171079!5m2!1ses!2ses" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 </main>
-<footer>
-    <div class="mapa">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.324024495164!2d-60.65207079999999!3d-32.94245360000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b7ab40a1439e7d%3A0xf8e2c132e168d874!2sSta%20Fe%202132%2C%20S2152ERO%20Rosario%2C%20Santa%20Fe%2C%20Argentina!5e0!3m2!1ses!2ses!4v1680681171079!5m2!1ses!2ses" width="200" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+    <div class="pie-pagina">
+        <footer>     
+            <p class="copyright">&copy Copyright Codo a Codo 2023 - Comisión 23007</p>
+        </footer>
     </div>
-    <p class="copyright">&copy Copyright Codo a Codo 2023</p>
-
-</footer>
   <script src="js/script.js"></script>
 </body>
 </html>
