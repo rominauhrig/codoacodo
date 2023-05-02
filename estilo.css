@@ -2,6 +2,7 @@ body{
 
     font-family: 'Montserrat', sans-serif;
     background-color: rgb(202, 201, 201);
+    margin: 0;
 
 }
 
@@ -9,7 +10,7 @@ body{
     display: grid;
     grid-template: auto auto auto auto auto / 20% auto 20%;
     grid-template-areas:
-                         " header header header header header"
+                         " logo header header header header"
                          "cuerpo cuerpo cuerpo cuerpo cuerpo"
                          "pie pie pie pie pie";
     
@@ -18,7 +19,7 @@ body{
 
 .imagen-logo{
     position: absolute;
-    margin-left: 90px;
+    margin-left: 70px;
     width: 80px;
     
 }
@@ -89,6 +90,7 @@ a:hover{
     grid-area: pie;
     text-align: center;
     background: linear-gradient(rgb(202,201,201),rgb(90, 89, 89));
+    padding: 10px;
     
 }
 
@@ -96,7 +98,7 @@ a:hover{
 
     color: black;
     font-size: 13px;
-    margin: 20px;
+    
 
 }
 
@@ -151,4 +153,54 @@ form label{
     margin: 0 0 60px 20px;
     width: 50%;
     box-shadow: 10px 10px 30px 15px black;
+}
+.logo{
+    grid-area: logo;
+    display: flex;
+    background: linear-gradient(rgb(202, 201, 201), rgb(68,251,93));
+    background-color: rgb(68, 251, 93);
+    align-items: center;
+    height: 70px;
+    border-radius: 5px;
+    padding-right: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contenedor{
+    grid-template: auto auto auto auto/ 100% ;
+    grid-template-areas:
+                         "header" 
+                         "logo"
+                         "cuerpo"
+                         "pie" ;
+}
+.logo{
+    justify-content: center;
+    padding: 0px;
+    background: none;
+    z-index: 1;
+}
+.imagen-logo{
+    width: 160px;
+    margin: 0;
+    opacity: 15%;
+    padding: 10px;
+}
+.menu{
+    font-size: 0.8em;
+    margin: 0px;
+    justify-content: center;
+    padding: 0;
+    z-index: 2;
+    opacity: 70%;   
+}
+.home{
+    margin-top: -100px;
+}
+.home h1, h2, h3{
+    font-size: 1em;
+}
+.imagen-reparando{
+    width: 100%;
+}
 }
