@@ -103,6 +103,7 @@ a:hover{
 }
 
 .cuerpo-formulario{
+    margin-left: 60px;
     grid-area: cuerpo;
 }
 form{
@@ -128,7 +129,7 @@ form label{
 }
 
 .enviar{
-    margin-left: 20px;
+    margin-left: 60px;
     width: 30%;
     padding: 15px 0px;
     font-size: 18px;
@@ -203,4 +204,22 @@ form label{
 .imagen-reparando{
     width: 100%;
 }
+
+.cuerpo-formulario{
+    margin-left: 10px;
+    
 }
+
+.input-padron{
+    width: 80%;
+}
+
+.enviar{
+    font-size: 18px;
+    width: 65%;
+}
+.mapa{
+    width: 90%;
+    margin: 0 0 25px 10px;
+    box-shadow: 5px 5px 15px 5px black;
+}}
