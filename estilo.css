@@ -59,7 +59,7 @@ a:link{
 a:visited{
     text-decoration: none;
 }
-a:hover{
+.menu a:hover{
     transition: 500ms;
     border-radius: 5px;
     background-color: rgb(27, 201, 50);
@@ -94,6 +94,13 @@ a:hover{
     
 }
 
+.pie-pagina a{
+    padding: 20px;
+}
+.pie-pagina img:hover{
+    transition: 1s;
+    transform: scale(1.5);
+}
 .copyright {
 
     color: black;
@@ -155,6 +162,7 @@ form label{
     width: 50%;
     box-shadow: 10px 10px 30px 15px black;
 }
+
 .logo{
     grid-area: logo;
     display: flex;
