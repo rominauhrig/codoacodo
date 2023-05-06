@@ -29,16 +29,16 @@
     <form action="link">
 
         <label for="firstname">Nombre:</label>
-        <input type="text" name="firstname" size="30" class="input-padron" id="firstname">
+        <input autofocus type="text" name="firstname" size="30" class="input-padron" id="firstname">
 
         <label for="email">Correo electrónico:</label>
         <input type="email" name="email" size="60" placeholder="email@dominio.com" class="input-padron" id="email">
 
         <label for="tel">Teléfono:</label>
-        <input type="tel" name="tel" size="30" placeholder="(xx) xxxx xxxx" class="input-padron" id="tel">
+        <input type="tel" name="tel" size="30" placeholder="xxxxxxxx" class="input-padron" id="tel" maxlength="15">
     
         <label for="content">Su consulta:</label><br>
-        <textarea name="content" id="content" cols="30" rows="10" class="input-padron"></textarea>
+        <textarea name="content" id="content" cols="30" rows="10" class="input-padron" ></textarea>
     
         <input type="button" value="Enviar Formulario" class="enviar" id="boton-enviar">
 </form>
