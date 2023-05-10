@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="EstilosForm.css">
+
+</head>
+
+<body>
+
+    <h1>Formulario de registro</h1>
+
+    <div class="formular">
+
+        <form action="" method="post" target="_blank" id="formulario" onsubmit="return validacionForm()">
+
+            <div class="casilleros">
+                <label for="nomb">Nombre: </label>
+
+                <div>
+                    <input type="text" name="Nombre" id="nomb" size="20" maxlength="20">
+                    <i class="fa-solid fa-circle-xmark" style="color: #ec0432;"></i>
+                </div>
+            </div>
+
+            <div class="casilleros">
+
+                <label for="apell">Apellido:</label>
+                <input type="text" name="Apellido" id="apell" size="20">
+            </div>
+
+            <div class="casilleros">
+                <label for="prov">Provincia:</label>
+                <input type="text" name="Provincia" id="prov" size="20">
+            </div>
+
+            <div class="casilleros">
+                <label for="localid">Localidad:</label>
+                <input type="text" name="Localidad" id="localid" size="20">
+            </div>
+
+            <div class="casilleros">
+                <label for="mail">E-mail:</label>
+                <input type="email" name="mail" id="mail" size="20">
+            </div>
+
+            <div class="casilleros">
+                <label for="repmail">Repetir E-mail:</label>
+                <input type="repemail" name="repmail" id="repmail" size="20">
+            </div>
+
+            <div class="casilleros">
+                <label for="contras">Contraseña:</label>
+                <input type="password" name="Contraseña" id="contras" size="20">
+            </div>
+
+            <div class="casilleros">
+                <label for="repcontras">Repetir contraseña</label>
+                <input type="password" name="repetcontras" id="repcontras" size="20">
+            </div>
+
+
+            <div class="div--botones1">
+                <input class="botones" type="submit" value="Enviar">
+            </div>
+            <div class="div--botones2">
+                <input class="botones" type="reset" value="Borrar">
+            </div>
+
+
+
+        </form>
+    </div>
+
+    <script src="vilid2.js"></script>
+    <script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

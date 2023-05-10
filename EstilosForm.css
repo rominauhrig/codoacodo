@@ -1,0 +1,103 @@
+.formular {
+
+    display: grid;
+    justify-content: center;
+}
+
+h1 {
+    display: grid;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(30, 157, 207);
+    font-size: 40;
+    justify-content: center
+    ;
+
+}
+
+input {
+    display: grid;
+    border-radius: 2px solid black;
+    justify-content: center;
+
+
+
+}
+
+label {
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(30, 157, 207);
+    font-size: 20;
+    cursor: pointer;
+
+
+}
+
+.botones {
+    display: inline-block;
+    color: rgb(30, 157, 207);
+    max-width: 80px;
+    margin: 10px;
+}
+
+.div--botones1 {
+
+    display:  flex;
+    justify-content: center;
+    
+    
+}
+.div--botones2 {
+
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+@media screen and (min-width: 580px) {
+    #formulario {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+        max-width: 100%;
+        margin: auto;
+        padding: 30px;
+        justify-content: end;
+
+    }
+
+    .casilleros  {
+        display: grid;
+        justify-content: center;
+ 
+    }
+
+    h1 {
+        display: grid;
+        justify-content: center;
+        margin: auto;
+       
+
+    }
+
+    .div--botones1 {
+
+        display: flex;
+        justify-content: end;
+        
+        
+    }
+    .div--botones2 {
+
+        display: flex;
+        justify-content: start;
+        
+        
+    }
+
+    .botones {
+        width: 100px;
+    }
+}
